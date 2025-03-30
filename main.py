@@ -3,6 +3,7 @@ import qrcode
 import logging
 import os
 import argparse
+import validators  # Import the validators package
 from pathlib import Path
 
 # Environment Variables for Configuration
