@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  qr_code_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - QR_DATA_URL=https://github.com/PoojaPatel9/Cloud_com.git    # actual GitHub username
+      - QR_CODE_DIR=/app/qr_codes
+      - QR_CODE_FILENAME=github_qr.png
+      - FILL_COLOR=red
+      - BACK_COLOR=white
+    volumes:
+      - ./qr_codes:/app/qr_codes  # Maps the local 'qr_codes' directory to '/app/qr_codes' in the container
+    command: ["python", "main.py"]
