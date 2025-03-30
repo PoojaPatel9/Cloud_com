@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - QR_DATA_URL=https://github.com/PoojaPatel9/Cloud_com.git    # actual GitHub username
+      - QR_DATA_URL=https://github.com/PoojaPatel9    # actual GitHub username
       - QR_CODE_DIR=/app/qr_codes
       - QR_CODE_FILENAME=github_qr.png
       - FILL_COLOR=red

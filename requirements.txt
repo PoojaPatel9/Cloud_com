@@ -14,3 +14,4 @@ pytest-cov==6.0.0
 pytest-pylint==0.21.0
 qrcode==8.0
 tomlkit==0.13.2
+validators
