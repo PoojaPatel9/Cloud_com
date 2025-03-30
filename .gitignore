@@ -1,5 +1,6 @@
 venv
-images
+images/*
+!images/*.png
 .python_history# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
